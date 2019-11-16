@@ -27,12 +27,18 @@ data = [
 let dogs = data.filter((animal) => {
   return animal.type === 'dog';
 });
-//Retornar a idade real de cada cachorro utilizando map()
+//Retornar a idade real de cada cachorro(multiplicando por 7) utilizando map()
 dogs.map((animal) => {
   return animal.age *= 7
-})
+});
+
+//Somar a idade de todos os cachorros utilizando reduce()
+var calcAge = dogs.reduce((sum, animal) => {
+  return sum + animal.age;
+}, 0);
 
 console.log(dogs)
+console.log(calcAge)
 
 
 
