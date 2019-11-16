@@ -6,18 +6,50 @@
     //sintaxe:
   //for (let i = 0; i < array.length; i++)
 
-//.forEach()
+                  //.forEach()
   //sintaxe:
   /* 
   array.forEach((a) => {
     console.log(a)
   });
    */
+//regular function
+/* array.forEach(function(element){
+  console.log(element)
+}) */
 
+//console.log(array)
+  //arrow function
+/*   
+const arr = array.forEach((element) => {console.log(element)}) //somente com um elemento
+//com elemento e com index
+const arrEInd = array.forEach((element, index) => {console.log(element, index)}) 
+ */
+
+ array.forEach(function(element, index){
+   if(element === 1) {
+     array[index] = 'vira outra coisa'
+   }
+ })
+ //console.log(array)
+
+          //MAP()
   
-const arr = array.forEach((element) => {
-  return element;
+const array2 = [5,6,7,8,9];
+
+array2.map(function(element, index) {
+  console.log(element, index)
 })
-console.log(arr)  
+
+
+
+
+
+
+
+
+
+
+
 
 

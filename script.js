@@ -65,16 +65,19 @@ const palavras = ["spray", "limit", "elite", "exuberant", "destruction",
 "present", "happy"];
 
 let longwords = palavras.filter((word) => {
-return word.length > 6
+    return word.length > 6
 });
 
 
               //OUTRO USO PARA MAP()
+//map() ao invés de filtrar algo, ele vai até o valor e faz algo
 
 const numbers = [1, 4, 9];
 let roots = numbers.map(Math.sqrt)
 //roots agora é [1, 2, 3]
 //numbers continua sendo [1, 4, 9];
+
+              //OUTRO USO PARA REDUCE()
 
 
 console.log()
