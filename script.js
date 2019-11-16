@@ -37,6 +37,25 @@ var calcAge = dogs.reduce((sum, animal) => {
   return sum + animal.age;
 }, 0);
 
+//Detalhamento do reduce
+
+/*
+ array.reduce( function( prevVal, elem, index, array ) {
+  ...
+}, initialValue ); //o zero passado acima, se refere ao valor inicial
+
+          prevVal:Valor cumulado retornado em cada iteração
+
+          elem:Valor do elemento
+
+          indexÍndice em cada iteração, da esquerda para a direita
+
+          arrayArray original invocando o método
+
+          initialValue(opcional) Objeto usado como primeiro argumento na primeira iteração (mais à esquerda)
+
+*/
+
 console.log(dogs)
 console.log(calcAge)
 
