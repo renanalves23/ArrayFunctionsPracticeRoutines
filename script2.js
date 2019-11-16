@@ -36,10 +36,16 @@ const arrEInd = array.forEach((element, index) => {console.log(element, index)})
           //MAP()
   
 const array2 = [5,6,7,8,9];
+      //MAP() aceita que se crie um novo array e seja guardado numa variável
+const novoArr = array2.map(function(element, index) {
+  if(element === 5) {
+    element = 'outra coisa';
+  }
 
-array2.map(function(element, index) {
-  console.log(element, index)
+  return element;
 })
+
+console.log(novoArr)
 
 
 
