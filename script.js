@@ -56,17 +56,8 @@ var calcAge = dogs.reduce((sum, animal) => {
 
 */
 
-console.log(dogs)
-console.log(calcAge)
-
-
-
-
-
-
-
-
-
+// console.log(dogs)
+// console.log(calcAge)
 
 //filter()
 
@@ -76,6 +67,15 @@ const palavras = ["spray", "limit", "elite", "exuberant", "destruction",
 let longwords = palavras.filter((word) => {
 return word.length > 6
 });
+
+
+              //OUTRO USO PARA MAP()
+
+const numbers = [1, 4, 9];
+let roots = numbers.map(Math.sqrt)
+//roots agora é [1, 2, 3]
+//numbers continua sendo [1, 4, 9];
+
 
 console.log()
  
