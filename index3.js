@@ -34,5 +34,15 @@ const itensBaratos = items.some((item) => { //retorna verdadeiro assim que encon
  console.log(todosCaros) // todos são caros???  item.price > 100 ?????  false
 
 
+ //REDUCE
+
+ //notar que a ordem dos elementos da função importam. Nesse caso, o item vem em segundo
+ const total = items.reduce((currentTotal, item) => {//currentTotal é o valor que é atualizado após cada iteração
+    return item.price + currentTotal; //basta adicionar o preço ao currentTotal
+ }, 0); //initial value
+ console.log(total)
+
+
+
 
 
