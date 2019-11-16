@@ -19,5 +19,20 @@ items.forEach((item) =>{
   console.log(item.price)
 })
 
+//pouco usadas some() e every()
+
+const itensBaratos = items.some((item) => { //retorna verdadeiro assim que encontrar o que procura
+    return item.price <= 50;
+});
+
+//everey verifica se todos os itens do array match the passed condition
+        //se sim, aparece true
+ const todosCaros = items.every((item) => {
+     return item.price > 100
+ });
+ 
+ console.log(todosCaros) // todos são caros???  item.price > 100 ?????  false
+
+
 
 
